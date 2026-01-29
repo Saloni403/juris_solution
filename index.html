@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Law Website</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ===== TOP HEADER (DESKTOP ONLY) ===== -->
+<div class="top-header">
+  <div class="social">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+  </div>
+  <div class="top-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Request Quote</a>
+    <a href="#">FAQ</a>
+  </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="nav-container">
+
+    <!-- LOGO IMAGE -->
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo">
+    </div>
+
+    <div class="menu-icon" id="menuIcon">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+      <div class="close-icon" id="closeIcon">
+        <i class="fas fa-times"></i>
+      </div>
+
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+
+      <!-- DROPDOWN -->
+      <div class="dropdown">
+      <button class="dropdown-toggle">
+        Legal Services <i class="fas fa-angle-down"></i>
+      </button>
+        <div class="dropdown-menu">
+          <a href="#">Trademark & Copyright</a>
+          <a href="#">Company Incorporation</a>
+          <a href="#">Registration & Licenses</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown-toggle">
+          Rera Complaint <i class="fas fa-angle-down"></i>
+        </button>
+        <div class="dropdown-menu">
+          <a href="#">Possession Complaint</a>
+          <a href="#">Refund Complaint</a>
+          <a href="#">Compensation Complaint</a>
+          <a href="#">Rera Agreement Drafting</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+       <button class="dropdown-toggle">
+       Debt Settlement Services <i class="fas fa-angle-down"></i>
+      </button>
+        <div class="dropdown-menu">
+          <a href="#">Civil Proceedings</a>
+          <a href="#">Legal Consultation</a>
+          <a href="#">Anti-Harassment Services</a>
+          <a href="#">Debt Reduction</a>
+        </div>
+      </div>
+
+      <a href="#">Blog</a>
+      <a href="#">Contact Us</a>
+      <a href="#" class="login-btn">Login</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- ===== BANNER SLIDER ===== -->
+<section class="banner">
+  <div class="slider">
+    <img src="images/banner.jpg" class="slide active">
+    <img src="images/banner1.jpg" class="slide">
+    <img src="images/banner2.jpg" class="slide">
+
+    <span class="arrow left" onclick="prevSlide()">&#10094;</span>
+    <span class="arrow right" onclick="nextSlide()">&#10095;</span>
+  </div>
+</section>
+
+<!-- ===== SERVICES SECTION ===== -->
+<section class="services-section">
+
+    <!-- TOP CONTENT -->
+  <div class="services-intro">
+    <div class="intro-left">
+      <span class="welcome">WELCOME</span>
+      <h2>
+        Reputation.<br>
+        Respect.<br>
+        Result.
+      </h2>
+      <div class="line"></div>
+    </div>
+
+    <div class="intro-right">
+      <p>
+        We understand that legal issues can be some of the most challenging
+        and stressful experiences in life. Whether you are dealing with a
+        complex family matter, facing criminal charges, or navigating business
+        law, our mission is to provide expert legal guidance.
+      </p>
+    </div>
+  </div>
+
+  <div class="services-grid">
+
+    <!-- CARD 1 -->
+    <div class="service-card">
+      <img src="images/Legal Services.jpg" alt="Legal Services">
+      <div class="service-overlay">
+        <h3><i class="fas fa-scale-balanced"></i> Legal Services</h3>
+        <p>Expert legal solutions tailored to protect your rights and interests.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="service-title">Legal Services</div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="service-card">
+      <img src="images/RERA Compliance.jpg" alt="RERA Compliance">
+      <div class="service-overlay">
+        <h3><i class="fas fa-building"></i> Rera Complaint</h3>
+        <p>Complete Rera support for buyers, builders & developers.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="service-title">Rera Complaint</div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="service-card">
+      <img src="images/Debt Settlement Services.jpg" alt="Debt Settlement">
+      <div class="service-overlay">
+        <h3><i class="fas fa-hand-holding-dollar"></i> Debt Settlement Services</h3>
+        <p>Relief from financial stress with professional debt solutions.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="service-title">Debt Settlement Services</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE SECTION ===== -->
+<section class="experience-section">
+
+  <!-- LEFT IMAGE -->
+  <div class="experience-image">
+    <img src="images/Legal Services.jpg" alt="Legal Services">
+  </div>
+
+  <!-- RIGHT CONTENT -->
+  <div class="experience-content">
+    <span class="exp-label">EXPERIENCES</span>
+    <h2>Let Our Experience<br>Be Your Guide</h2>
+
+    <!-- TABS -->
+    <div class="exp-tabs">
+      <button class="tab-btn active" data-tab="tab1">Our Attorneys</button>
+      <button class="tab-btn" data-tab="tab2">Our Expertise</button>
+      <button class="tab-btn" data-tab="tab3">Our Firm</button>
+    </div>
+
+    <!-- TAB CONTENT -->
+    <div class="tab-content active" id="tab1">
+      <p>
+        Our attorneys are the cornerstone of our commitment to providing
+        exceptional legal services. Each member brings deep experience,
+        specialized knowledge, and dedication to achieving the best outcomes.
+      </p>
+    </div>
+
+    <div class="tab-content" id="tab2">
+      <p>
+        We specialize in civil litigation, corporate law, Rera Complaint,
+        debt settlement, and advisory services with a strategic approach.
+      </p>
+    </div>
+
+    <div class="tab-content" id="tab3">
+      <p>
+        Our firm is built on trust, integrity, and results. We believe in
+        transparent communication and long-term client relationships.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRACTICE SECTION ===== -->
+<section class="practice-area">
+  <div class="practice-container">
+
+    <div class="practice-heading">
+      <h2>Practice Areas</h2>
+      <span class="practice-line"></span>
+      <p>
+        We’re dedicated to offering comprehensive, expert legal services tailored
+        to meet your specific needs. Our experienced attorneys deliver practical,
+        result-oriented legal solutions.
+      </p>
+    </div>
+
+    <div class="practice-grid">
+
+      <div class="practice-item">Corporate & M&A</div>
+      <div class="practice-item">Construction & Real Estate</div>
+      <div class="practice-item">Commercial Dispute Resolution</div>
+      <div class="practice-item">Employment Law</div>
+
+      <div class="practice-item">Banking & Finance</div>
+      <div class="practice-item">Capital Market</div>
+      <div class="practice-item">Environmental Law</div>
+      <div class="practice-item">Intellectual Property Rights</div>
+
+      <div class="practice-item">Government</div>
+      <div class="practice-item">Foundation / NGO Advisory</div>
+      <div class="practice-item">Bankruptcy & Insolvency</div>
+      <div class="practice-item">Criminal Law</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== LAWYER TEAM SECTION ===== -->
+<section class="team-section">
+  <div class="team-container">
+
+    <div class="team-heading">
+      <h2>Our Lawyer Team</h2>
+      <span class="team-line"></span>
+    </div>
+
+    <div class="team-grid">
+
+      <!-- TEAM MEMBER 1 -->
+      <div class="team-card">
+        <div class="team-img">
+          <img src="images/banner1.jpg" alt="Fynley Wilkinson">
+          <div class="team-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3>Fynley Wilkinson</h3>
+          <span>Managing Partner</span>
+        </div>
+      </div>
+
+      <!-- TEAM MEMBER 2 -->
+      <div class="team-card">
+        <div class="team-img">
+          <img src="images/banner2.jpg" alt="Sasha Welsh">
+          <div class="team-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3>Sasha Welsh</h3>
+          <span>Senior Partner</span>
+        </div>
+      </div>
+
+      <!-- TEAM MEMBER 3 -->
+      <div class="team-card">
+        <div class="team-img">
+          <img src="images/banner3.jpg" alt="John Shepard">
+          <div class="team-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3>John Shepard</h3>
+          <span>Associate</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS SECTION ===== -->
+<section class="testimonials-section">
+  <div class="testimonials-container">
+
+    <div class="testimonials-heading">
+      <h2>Testimonials</h2>
+      <span class="test-line"></span>
+    </div>
+
+    <div class="testimonial-slider">
+
+      <div class="testimonial-track">
+
+        <!-- TESTIMONIAL 1 -->
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left"></i>
+          <h4>Trustworthy Lawyer</h4>
+          <p>
+            From the initial consultation to final resolution, their professionalism
+            and dedication were evident throughout the process.
+          </p>
+          <span>John D., Family Law Client</span>
+        </div>
+
+        <!-- TESTIMONIAL 2 -->
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left"></i>
+          <h4>Highly Recommend</h4>
+          <p>
+            The attorneys took time to understand my concerns and created a solid
+            legal strategy that gave me confidence.
+          </p>
+          <span>Edward L., Estate Planning</span>
+        </div>
+
+        <!-- TESTIMONIAL 3 -->
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left"></i>
+          <h4>Excellent Support</h4>
+          <p>
+            Clear communication, honest advice and strong representation.
+            Couldn’t have asked for better service.
+          </p>
+          <span>Maria S., Criminal Defense</span>
+        </div>
+
+        <!-- TESTIMONIAL 4 -->
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left"></i>
+          <h4>Professional Team</h4>
+          <p>
+            Their legal expertise helped me navigate a complex matter smoothly
+            and efficiently.
+          </p>
+          <span>Alex R., Personal Injury</span>
+        </div>
+
+        <!-- TESTIMONIAL 5 -->
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left"></i>
+          <h4>Very Reliable</h4>
+          <p>
+            I always felt informed and supported. The team truly cares about
+            client outcomes.
+          </p>
+          <span>Neha K., Corporate Client</span>
+        </div>
+
+        <!-- TESTIMONIAL 6 -->
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left"></i>
+          <h4>Strong Legal Knowledge</h4>
+          <p>
+            Their understanding of Rera laws helped me recover my investment
+            without hassle.
+          </p>
+          <span>Rahul M., Rera Client</span>
+        </div>
+
+        <!-- TESTIMONIAL 7 -->
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left"></i>
+          <h4>Great Experience</h4>
+          <p>
+            Efficient, transparent and result-oriented legal services.
+          </p>
+          <span>Sunita P., Civil Case</span>
+        </div>
+
+        <!-- TESTIMONIAL 8 -->
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left"></i>
+          <h4>Highly Skilled</h4>
+          <p>
+            They handled my case with confidence and professionalism.
+          </p>
+          <span>Amit S., Debt Settlement</span>
+        </div>
+
+        <!-- TESTIMONIAL 9 -->
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left"></i>
+          <h4>Outstanding Service</h4>
+          <p>
+            Their strategic approach made a big difference in my case.
+          </p>
+          <span>Priya R., Legal Advisory</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DOTS -->
+    <div class="testimonial-dots"></div>
+
+  </div>
+</section>
+
+<section class="blog-section">
+  <div class="blog-container">
+
+    <div class="blog-grid">
+
+      <!-- CARD 1 -->
+      <article class="blog-card">
+        <div class="blog-img">
+          <img src="images/Legal Services.jpg" alt="Legal Services">
+          <span class="blog-date">
+            <strong>10</strong> NOV
+          </span>
+        </div>
+
+        <div class="blog-content">
+          <span class="blog-category">LAW FIRM</span>
+          <h3>Legal Services</h3>
+          <p>
+            Expert legal solutions tailored to protect your rights and
+            interests across civil, corporate and advisory matters.
+          </p>
+          <span class="blog-author">Fynley Wilkinson</span>
+        </div>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="blog-card">
+        <div class="blog-img">
+          <img src="images/RERA Compliance.jpg" alt="RERA Compliance">
+          <span class="blog-date">
+            <strong>15</strong> NOV
+          </span>
+        </div>
+
+        <div class="blog-content">
+          <span class="blog-category">LAW FIRM</span>
+          <h3>Rera Complaint</h3>
+          <p>
+            Complete legal assistance for builders, developers and
+            homebuyers under Rera regulations.
+          </p>
+          <span class="blog-author">Fynley Wilkinson</span>
+        </div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="blog-card">
+        <div class="blog-img">
+          <img src="images/Debt Settlement Services.jpg" alt="Debt Settlement">
+          <span class="blog-date">
+            <strong>20</strong> NOV
+          </span>
+        </div>
+
+        <div class="blog-content">
+          <span class="blog-category">LAW FIRM</span>
+          <h3>Debt Settlement Services</h3>
+          <p>
+            Relief from financial stress with structured and
+            professional debt settlement solutions.
+          </p>
+          <span class="blog-author">Fynley Wilkinson</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- COLUMN 1 : LOGO + ABOUT -->
+    <div class="footer-col">
+      <img src="images/logo.png" class="footer-logo" alt="Juris Solution">
+      <p>
+        We understand that legal issues can be stressful and complex.
+        Our mission is to provide trusted and expert legal guidance
+        with clarity and care.
+      </p>
+    </div>
+
+    <!-- COLUMN 2 : QUICK LINKS -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- COLUMN 3 : LEGAL SERVICES -->
+    <div class="footer-col">
+      <h4>Legal Services</h4>
+      <ul>
+        <li><a href="#">Legal Services</a></li>
+        <li><a href="#">RERA Complaint</a></li>
+        <li><a href="#">Debt Settlement</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- COLUMN 4 : CONTACT -->
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p><strong>Email:</strong> info@JurisSolution.com</p>
+      <p><strong>Phone:</strong> +91 9876543210</p>
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="footer-bottom">
+    © 2026 Juris Solutions | Designed & Developed by
+    <a href="https://tssgtech.com" target="_blank">Tssg-Tech</a>
+  </div>
+</footer>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
