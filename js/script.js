@@ -1,24 +1,4 @@
-// MOBILE MENU
-const menuIcon = document.getElementById("menuIcon");
-const closeIcon = document.getElementById("closeIcon");
-const navLinks = document.getElementById("navLinks");
 
-menuIcon.onclick = () => navLinks.classList.add("show");
-closeIcon.onclick = () => navLinks.classList.remove("show");
-
-// DROPDOWN CLICK (MOBILE + TAB)
-const dropdowns = document.querySelectorAll(".dropdown");
-
-dropdowns.forEach(drop => {
-  const toggle = drop.querySelector(".dropdown-toggle");
-
-  toggle.addEventListener("click", () => {
-    dropdowns.forEach(d => {
-      if(d !== drop) d.classList.remove("active");
-    });
-    drop.classList.toggle("active");
-  });
-});
 
 // SLIDER
 let slides = document.querySelectorAll(".slide");
