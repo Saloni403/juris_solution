@@ -25,11 +25,11 @@
             </div>
 
             <!-- Top Links -->
-            <div class="top-links">
-                <a href="#" class="text-white text-decoration-none ms-3">Privacy Policy</a>
-                <!-- <a href="#" class="text-white text-decoration-none ms-3">Request Quote</a> -->
-                <a href="#" class="text-white text-decoration-none ms-3">FAQ</a>
-            </div>
+             <div class="top-links">
+        <a href="privacypolicy.html" class="text-white text-decoration-none ms-3">Privacy Policy</a>
+        <a href="terms-conditions.html" class="text-white text-decoration-none ms-3">Terms & Conditions</a>
+        <a href="faq.html" class="text-white text-decoration-none ms-3">FAQ</a>
+      </div>
 
         </div>
     </section>
@@ -98,7 +98,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="blogs.html">Blog</a>
+            <a class="nav-link" href="blogs.html">Blogs</a>
           </li>
 
           <li class="nav-item">
@@ -113,32 +113,75 @@
       </div>
     </div>
   </nav>
-<style>
-    
-    .loginsec .imgsec img{
-        width: 200px;
-    }
-</style>
-    <!-- login page -->
-     <section class="loginsec">
-        <div>
-        <div class="container d-flex align-items-center justify-content-center">
-            <div class="formdiv">
-                <div class="bg-black imgsec">
-                    <img src="images/logo.png"  alt="">
-                </div>
-                <form action="">
-                    <input type="text" placeholder="Your Email" name="" id="">
-                    <input type="text" placeholder="Your Password" name="" id="">
 
-                    <a href="">LOGIN</a>
-                </form>
+    <!-- login page -->
+  <section class="loginsec">
+        <div style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="container d-flex align-items-center justify-content-center py-5">
+                <div class="formdiv">
+
+                    <div class="bg-black imgsec text-center">
+                        <img src="images/logo.png" alt="">
+                        <div class="cent">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+
+                  
+
+                        <!-- LOGIN -->
+                        <div class="" id="SignIn">
+                            <form class="loginform">
+                                <input type="email" placeholder="Your Email">
+                                <input type="password" placeholder="Your Password">
+
+                                <a href="" type="submit" class="frmsubmit">LOGIN</a>
+
+                                <p class="acc">
+                                    Don't have account?
+                                    <a href="javascript:void(0)" onclick="showForm('SignUp')">Register now.</a>
+                                </p>
+                            </form>
+                        </div>
+
+                        <!-- REGISTER -->
+                        <div class="" id="SignUp">
+                            <form class="loginform">
+                                <input type="text" placeholder="Enter Name">
+                                <input type="tel" placeholder="Enter Mobile" name="" id="">
+                                <input type="email" placeholder="Enter Email">
+                                <input type="password" placeholder="Enter Password">
+
+                                <a href="" type="submit" class="frmsubmit">REGISTER</a>
+
+                                <p class="acc">
+                                    Already have an account?
+                                    <a href="javascript:void(0)" onclick="showForm('SignIn')">Login.</a>
+                                </p>
+                            </form>
+                        </div>
+
+            <script>
+function showForm(formId){
+
+  let signIn = document.getElementById("SignIn");
+  let signUp = document.getElementById("SignUp");
+
+  if(formId === "SignUp"){
+    signUp.style.display = "block";
+    signIn.style.display = "none";
+  }else{
+    signIn.style.display = "block";
+    signUp.style.display = "none";
+  }
+
+}
+</script>
+
+                </div>
             </div>
         </div>
-        </div>
-     </section>
-
-
+    </section>
 
      <!-- ===== FOOTER ===== -->
    <footer class="footer pt-5">
@@ -161,11 +204,12 @@
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="blogs.html">Blog</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="login.html">Login</a></li>
-            <li><a href="">Privacy & Policies</a></li>
-            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="privacypolicy.html">Privacy & Policies</a></li>
+            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                <li><a href="faq.html">FAQ's</a></li>
           </ul>
         </div>
 
